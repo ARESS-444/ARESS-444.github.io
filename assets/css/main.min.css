@@ -32,7 +32,7 @@
     border: 3px solid transparent; /* Asegúrate de que el borde esté inicialmente transparente */
     transition: border-color 0.3s ease; /* Agrega una transición suave al cambio de color del borde */
     position: relative; /* Asegúrate de que el elemento tenga una posición relativa */
-  }
+}
   
 .profile::after {
     content: '::after'; /* Agrega un pseudo-elemento ::after para crear el efecto de borde */
