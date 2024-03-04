@@ -21,3 +21,31 @@
 .button:hover {
     background-color: #ad180d; 
 }
+
+.profile {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.profile {
+    border: 3px solid transparent; /* Asegúrate de que el borde esté inicialmente transparente */
+    transition: border-color 0.3s ease; /* Agrega una transición suave al cambio de color del borde */
+    position: relative; /* Asegúrate de que el elemento tenga una posición relativa */
+  }
+  
+  .profile::after {
+    content: '::after'; /* Agrega un pseudo-elemento ::after para crear el efecto de borde */
+    position: absolute;
+    top: -5px; /* Ajusta según el diseño */
+    left: -5px; /* Ajusta según el diseño */
+    right: -5px; /* Ajusta según el diseño */
+    bottom: -5px; /* Ajusta según el diseño */
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+    z-index: -1; /* Coloca el pseudo-elemento detrás del elemento real */
+  }
+  
+  .profile:hover, .profile:hover::after {
+    border-color: rgb(255, 255, 255); /* Cambia el color del borde a rojo cuando se coloca el cursor sobre la imagen */
+  }
